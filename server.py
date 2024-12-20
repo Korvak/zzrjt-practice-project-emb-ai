@@ -26,8 +26,8 @@ def sent_analyzer():
         label = response['label']
         score = response['score']
 
-        # Return a formatted string with the sentiment label and score
-        return f"The given text has been identified as {label.split('_'[1])} with a score of {score}."
+         # Return a formatted string with the sentiment label and score
+        return f"The given text has been identified as { label.split('_')[1] } with a score of { score }."
     except Exception as e : 
         print(e)
         return "an error occurred."
